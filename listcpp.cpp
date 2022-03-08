@@ -1,6 +1,7 @@
 // D.2 listcpp.cpp
 
 // list contents of file using C++ stream classes
+#include <iostream>
 #include <fstream>
 using namespace std;
 

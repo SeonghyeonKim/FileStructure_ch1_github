@@ -1,7 +1,7 @@
 // D.6 readvar.cpp
 // write a stream of persons, using fstream.h 
-#include <fstream.h>
-#include <strstream.h>
+#include <fstream>
+#include <strstream>
 #include <string.h>
 #include "writeper.cpp"
 

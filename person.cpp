@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string.h>
 #include "person.h"
+using namespace std;
 
 istream & operator >> (istream & stream, Person & p)
 { // read fields from input
@@ -14,4 +15,9 @@ istream & operator >> (istream & stream, Person & p)
 	cout<<"Enter state: "<<flush; stream.getline(p.State,15);
 	cout<<"Enter zip code: "<<flush; stream.getline(p.ZipCode,10);
 	return stream;
+}
+
+ostream& operator << (ostream& stream, Person& p)
+{
+	
 }

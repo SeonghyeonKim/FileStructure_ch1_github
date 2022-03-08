@@ -1,6 +1,7 @@
 // D.8 readper.cpp
-#include <iostream.h>
+#include <iostream>
 #include "person.h"
+using namespace std;
 
 istream & operator >> (istream & stream, Person & p)
 { // read fields from input

@@ -1,8 +1,11 @@
 // D.5 readdel.cpp
 // read a stream of persons with delimited fields
-#include <fstream.h>
+#include <fstream>
 #include <string.h>
+#include <iostream>
 #include "writeper.cpp"
+using namespace std;
+
 istream & operator >> (istream & stream, Person & p)
 { // read fields from file
 	char delim;
@@ -15,7 +18,8 @@ istream & operator >> (istream & stream, Person & p)
 	stream.getline(p.ZipCode,10,'|');
 	return stream;
 }
-void main (){
+
+int main (){
 	char filename [20];
 	Person p;
 	cout << "Enter the file name:"<<flush;

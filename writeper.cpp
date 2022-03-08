@@ -1,6 +1,6 @@
 // D.7 writestr.cpp
 // write a stream of persons, using fstream.h 
-#include <fstream.h>
+#include <fstream>
 #include <string.h>
 #include "readper.cpp"
 const int MaxBufferSize = 200;
