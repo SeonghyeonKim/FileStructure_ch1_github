@@ -3,7 +3,12 @@
 #include <fstream>
 #include <strstream>
 #include <string.h>
-#include "writeper.cpp"
+//#include "writeper.cpp"
+
+// Ãß°¡
+#include "person.h"
+#include <iostream>
+using namespace std;
 
 istream & operator >> (istream & stream, Person & p)
 { // read fields from stream
@@ -31,6 +36,8 @@ int ReadVariablePerson (istream & stream, Person & p)
 	strbuff >> p;
 	return 1;
 }
+
+
 int main (){
 	char filename [20];
 	Person p;

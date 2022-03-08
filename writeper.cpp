@@ -14,7 +14,7 @@ int WritePerson (ostream & stream, Person & p)
 	strcat(buffer, p.ZipCode);  strcat(buffer,"|");
 	short length=strlen(buffer); 
 	stream.write ((char *)&length, sizeof(length)); // write length
-	stream.write (&buffer, length);
+	stream.write (buffer, length);
 }
 
 int main (){
